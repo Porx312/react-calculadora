@@ -46,11 +46,13 @@ box-shadow:  0px 0px 0px 2px rgb(77, 77, 77);
   height: 220px;
   background-color: var(--display-color);
   border-radius: 30px;
+  flex-wrap: wrap;
   display: flex;
   align-items: end;
+  flex-direction: column;
+  overflow: hidden;
   justify-content: end;
   padding: 2rem;
-  overflow: hidden;
 }
 .display span{
   color: var(--text-color1);
@@ -60,16 +62,20 @@ box-shadow:  0px 0px 0px 2px rgb(77, 77, 77);
 }
 
 
+.display h2{
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-.history{
-  height: 420px;
-background-color: var(--main-color);
+  color: var(--text-color1);
 }
+
 .keybord{
   width: 100%;
   height: 420px;
   background-color: var(--main-color);
   display: flex;
+
   align-items: center;
   justify-content: center;
 }
@@ -124,10 +130,34 @@ tr{
   background-color:  rgba(63, 61, 61, 0.5);
   opacity: 0;
 }
-.btn:active{ 
-  border-radius: 10px;
-}
+
 .btn:active::before{
   transform: scale(1);
   opacity: 1;
 }
+
+.history{
+  height: 420px;
+background-color: var(--main-color);
+display: flex;
+padding: 1rem;
+flex-direction: column;
+justify-content: end;
+scrollbar-width: none; /* Para ocultar en Firefox */
+-ms-overflow-style: none; /* Para ocultar en Internet Explorer y Edge */
+overflow-y: scroll;
+}
+.history-card{
+  height: 60px;
+  width: 100%;
+  display: flex;
+
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+  padding: 1rem 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  color:var(--text-color1);
+}
+

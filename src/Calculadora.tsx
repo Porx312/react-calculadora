@@ -9,7 +9,7 @@ const App: React.FC = () => {
   // Función que se ejecuta al hacer scroll
 
 
-  const refScroll = useRef<HTMLDivElement | null>(null);
+ const refScroll = useRef<HTMLDivElement | null>(null);
   const [scrollCount, setScrollCount] = useState<number>(0);
 
   // Función para desplazar el contenedor hacia abajo
