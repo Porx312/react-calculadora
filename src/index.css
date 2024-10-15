@@ -1,0 +1,133 @@
+:root{
+  --background-color:#1f1f1f;
+  --main-color:#0f0f0f ;
+  --display-color:#242323;
+  --text-color1:#fff;
+  --text-color2:#6e6d6c;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.main{ 
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: rgb(60,9,58);
+  background: radial-gradient(circle, rgba(60,9,58,1) 0%, rgba(85,15,80,1) 100%);
+  justify-content: center;
+}
+
+.phone{
+  width:350px;
+  border: 6px solid rgb(0, 0, 0);
+  height: 650px;
+  border-radius: 50px;
+  -webkit-box-shadow:  0px 0px 0px 2px rgb(77, 77, 77); 
+box-shadow:  0px 0px 0px 2px rgb(77, 77, 77);
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Para ocultar en Firefox */
+  -ms-overflow-style: none; /* Para ocultar en Internet Explorer y Edge */
+}
+.content-app{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 1250px;
+}
+.display{
+  width: 100%;
+  height: 220px;
+  background-color: var(--display-color);
+  border-radius: 30px;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  padding: 2rem;
+  overflow: hidden;
+}
+.display span{
+  color: var(--text-color1);
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.history{
+  height: 420px;
+background-color: var(--main-color);
+}
+.keybord{
+  width: 100%;
+  height: 420px;
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+table{
+  width: 100%;
+  height: 100%;
+}
+tbody{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: 2rem;
+  
+}
+tr{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: .5rem;
+}
+.btn{
+  width: 65px;
+  height: 65px;
+  border-radius: 360px;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--display-color);
+  color: var(--text-color1);
+  font-weight: bold;
+  transition: .1s all ease-in ;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.btn-operation{
+  background-color: var(--text-color2);
+}
+.btn::before{
+  content: ""; 
+  width: 100%;
+  height: 100%;
+  transform: scale(.3);
+  transition: .1s all ease-in;
+  border-radius: 360px;
+  position: absolute;
+  background-color:  rgba(63, 61, 61, 0.5);
+  opacity: 0;
+}
+.btn:active{ 
+  border-radius: 10px;
+}
+.btn:active::before{
+  transform: scale(1);
+  opacity: 1;
+}
