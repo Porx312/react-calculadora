@@ -6,7 +6,7 @@ const History = () => {
   return (
     <div className="history">
         {history.map((item, index) => (
-            <HistoryCard key={index} history={item}/>
+            <HistoryCard key={index} history={{ ...item, result: String(item.result) }}/>
         )) }
     </div>
   )
