@@ -15,8 +15,8 @@
   height: 100vh;
   display: flex;
   align-items: center;
-  background: rgb(60,9,58);
-  background: radial-gradient(circle, rgba(60,9,58,1) 0%, rgba(85,15,80,1) 100%);
+  background: rgb(255, 25, 255);
+  background: radial-gradient(circle, rgb(5, 5, 5) 0%, rgb(255, 255, 255) 25%, rgb(255, 254, 254) 100%);
   justify-content: center;
 }
 

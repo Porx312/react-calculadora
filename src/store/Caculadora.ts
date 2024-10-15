@@ -27,7 +27,8 @@ interface CalculatorState {
 }
 
 // Crea el store de Zustand
-const useCalculatorStore = create<CalculatorState>((set) => ({
+const useCalculatorStore = create<CalculatorState>( 
+    (set) => ({
   currentNumber: '0', // Estado inicial
   operations: [],
   displayOperation: '', // Estado inicial de la visualización
