@@ -1,30 +1,17 @@
-# React + TypeScript + Vite
+# Calculadora Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esta es una calculadora web simple y elegante que permite realizar operaciones matemáticas básicas como suma, resta, multiplicación y división. La interfaz es intuitiva y fácil de usar, diseñada para funcionar en navegadores de escritorio y móviles.
 
-Currently, two official plugins are available:
+![Calculadora Web](src/assets/Captura%20de%20pantalla%202024-10-16%20135020.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Características
 
-## Expanding the ESLint configuration
+- **Operaciones Básicas**: Suma, resta, multiplicación y división.
+- **Interfaz Intuitiva**: Diseño fácil de usar que permite a los usuarios realizar cálculos rápidamente.
+- **Responsive**: Se adapta a diferentes tamaños de pantalla, lo que permite su uso en dispositivos móviles y de escritorio.
+- **Resultados en Tiempo Real**: Muestra los resultados inmediatamente al ingresar los números y seleccionar la operación.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Instalación
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+npm i 
+npm run dev
